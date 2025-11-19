@@ -2,6 +2,8 @@
 
 namespace Ecommerce.Domain.Orders;
 
+// Domain Event
+// Porque representa un hecho relevante en el dominio (se puede usar para facturación, notificaciones, integraciones, etc.)
 public sealed class OrderPaidEvent : IDomainEvent
 {
     public Guid OrderId { get; }

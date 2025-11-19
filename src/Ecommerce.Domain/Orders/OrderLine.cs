@@ -2,6 +2,8 @@
 
 namespace Ecommerce.Domain.Orders;
 
+// Entidad
+// Porque tiene identidad (producto) y comportamiento, pero no es aggregate root.
 public sealed class OrderLine
 {
     public Guid ProductId { get; }
@@ -10,7 +12,7 @@ public sealed class OrderLine
 
     public OrderLine(Guid productId, int quantity, Money unitPrice)
     {
-        if (quantity <= 0) throw new DomainException("Quantity must be > 0");
+        if (quantity <= 0) throw new DomainException("Quantity must be greater than 0");
         ProductId = productId;
         Quantity = quantity;
         UnitPrice = unitPrice;
