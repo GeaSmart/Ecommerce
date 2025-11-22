@@ -1,6 +1,6 @@
 ﻿using Ecommerce.Domain.Shared;
 
-namespace Ecommerce.Domain.Orders;
+namespace Ecommerce.Domain.Order.Events;
 
 // Domain Event
 // Porque representa un hecho relevante en el dominio (se puede usar para facturación, notificaciones, integraciones, etc.)
