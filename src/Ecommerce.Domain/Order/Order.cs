@@ -91,6 +91,7 @@ public sealed class Order
 
     private void EnsureInvariants()
     {
+        // hola nuevo comentario
         var total = Total();
         if (total.Amount <= 0)
             throw new DomainException("Order total must be greater than 0.");
